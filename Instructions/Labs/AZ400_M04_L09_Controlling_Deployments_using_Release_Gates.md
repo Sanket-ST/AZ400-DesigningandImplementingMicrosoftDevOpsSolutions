@@ -278,9 +278,9 @@ In this task, you will enable the post-deployment gate for the Canary Environmen
 1.  On **Post-deployment conditions** pane, in the **Query Azure Monitor Alerts** section, in the **Azure subscription** dropdown list, select the entry representing the connection to your Azure subscription, and, in the **Resource group** dropdown list, select the **az400m10l01-RG** entry.
 1.  On **Post-deployment conditions** pane, expand the **Evaluation options** and configure the following options:
 
-- Set the value of **Time between re-evaluation of gates** to **5 Minutes**.
-- Set the value of **Timeout after which gates fail** to **8 Minutes**.
-- Select the **On successful gates, ask for approvals** option.
+    - Set the value of **Time between re-evaluation of gates** to **5 Minutes**.
+    - Set the value of **Timeout after which gates fail** to **8 Minutes**.
+    - Select the **On successful gates, ask for approvals** option.
 
     > **Note**: The sampling interval and timeout work together so that the gates will call their functions at suitable intervals and reject the deployment if they don't succeed during the same sampling interval within the timeout period. 
 
