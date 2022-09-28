@@ -27,15 +27,15 @@ After you complete this lab, you will be able to:
    
 3. Provide the email address and click on continue.
 
- ![Github](images/mod6_22.png)
+   ![Github](images/mod6_22.png)
  
 4. Provide the password and enter the valid username and click on continue.
 
-  ![Github](images/mod6_26.png)
+   ![Github](images/mod6_26.png)
 
 5. Provide the confirmation and verify your account and click on create account. This would take 2 minutes to create.
 
- ![Github](images/mod6_25.png)
+   ![Github](images/mod6_25.png)
 
 ### Exercise 1: Getting started with Azure Pipelines
 
@@ -56,12 +56,13 @@ In this task, you will fork a GitHub repo and install Azure Pipelines in your Gi
 
 3.  On the page displaying the forked repo, at the top menu, click **Marketplace**.
 
-   ![Azure DevOps](images/mod6_14.png)
+    ![Azure DevOps](images/mod6_14.png)
    
-   > **Note**: The **GitHub Marketplace** provides a variety of tools from Microsoft and 3rd parties that help you extend your project workflows. 
+    > **Note**: The **GitHub Marketplace** provides a variety of tools from Microsoft and 3rd parties that help you extend your project workflows.
+    
 4.  In the **Search for apps and actions**, type **Azure Pipelines**, press the **Enter** key, and, in the list of results, click **Azure Pipelines**.
 
-  ![Azure DevOps](images/mod6_15.png)
+    ![Azure DevOps](images/mod6_15.png)
 
 5.  On the **Azure Pipelines** page, click **Read more** and read through the benefits of Azure Pipelines.
 
@@ -69,15 +70,17 @@ In this task, you will fork a GitHub repo and install Azure Pipelines in your Gi
 
 6.  On the **Azure Pipelines** page, click **Install it for free**. If you have multiple **GitHub** accounts, select the one you forked the calculator to from the **Switch billing account** dropdown.
 
-  ![Azure DevOps](images/mod6_16.png)
+    ![Azure DevOps](images/mod6_16.png)
+    
 7.  On the **Review your order** page, click **Complete order and begin installation**.
 
-   ![Azure DevOps](images/mod6_17.png)
+    ![Azure DevOps](images/mod6_17.png)
+   
 8.  On the **Install Azure Pipelines** page, use the default option **All repositories** and click **Install**.
 
-   ![Azure DevOps](images/mod6_18.png)
+    ![Azure DevOps](images/mod6_18.png)
 
-   > **Note**: You have the option to specify repositories to include, but for the purposes of this lab, just include all of them. Note that Azure DevOps requires the listed set of permissions to fulfill its services. 
+    > **Note**: You have the option to specify repositories to include, but for the purposes of this lab, just include all of them. Note that Azure DevOps requires the listed set of permissions to fulfill its services. 
 
 9.  If prompted, authenticate with your GitHub password to continue.
 10.  When prompted, on the **Setup your Azure Pipelines project** page, in the **Select your Azure DevOps organization** dropdown list, select your Azure DevOps account and click **Create a new project**.
@@ -96,21 +99,22 @@ In this task, you will configure the Azure Pipelines project based on the fork o
 
 3.  On the **Select a repository** pane of the **Pipelines** view in the Azure DevOps portal, select the fork of the GitHub calculator repository you created in the previous task.
 
-   > **Note**: Azure Pipelines will analyze your project in an attempt to determine if any existing templates would be a good fit. In this case, the recommended template is for **Node.js**, which is perfect for our needs. Some alternative templates are also suggested, although the recommended one is the best for this lab. 
+    > **Note**: Azure Pipelines will analyze your project in an attempt to determine if any existing templates would be a good fit. In this case, the recommended template is for **Node.js**, which is perfect for our needs. Some alternative templates are also suggested, although the recommended one is the best for this lab.
+     
 4.  On the **Configure your pipeline**, select **Node.js**.
 
-  ![Azure DevOps](images/mod6_19.png)
+    ![Azure DevOps](images/mod6_19.png)
 
-   > **Note**: The build pipeline is defined as **YAML**, a markup syntax well-suited to defining processes like this because it allows you to manage the configuration of the pipeline like any other file in the repo. It's a pretty simple template that identifies the pool to pull a VM from for building, the process to install Node.js for building, and the actual build itself. 
+    > **Note**: The build pipeline is defined as **YAML**, a markup syntax well-suited to defining processes like this because it allows you to manage the configuration of the pipeline like any other file in the repo. It's a pretty simple template that identifies the pool to pull a VM from for building, the process to install Node.js for building, and the actual build itself. 
 
 5.  On the **Review your pipeline YAML**, click **Save and run** to save the pipeline and queue a new build.
 6.  On the **Save and run** pane, accept the default settings and click **Save and run**.
 
-  ![Azure DevOps](images/mod6_20.png)
+    ![Azure DevOps](images/mod6_20.png)
 
-   > **Note**: For the purposes of this lab, you can commit this new file directly to the master branch. 
-
-   > **Note**: It will take a moment for the pipeline to complete. During this time it will configure the build agent, pull in the source from GitHub, and build it according to the pipeline definition.
+    > **Note**: For the purposes of this lab, you can commit this new file directly to the master branch. 
+ 
+    > **Note**: It will take a moment for the pipeline to complete. During this time it will configure the build agent, pull in the source from GitHub, and build it according to the pipeline definition.
 
 7.  On the **Summary** tab of the build job's pane, verify that the build completed successfully.
 
@@ -175,7 +179,7 @@ In this task, you will propose an invalid change and review the results of a bui
 10.  In the list of job tasks, click the **npm install, build, and test** task to view its output.
 11.  Locate the section that lists out failing tests. 
 
-    > **Note**: It might not be immediately clear why the tests failed, but all of the history we've accrued in the pipeline makes it easy to identify that something from this new pull request is the cause. The next step will be to figure out why "21 + 21" produced "2121" instead of the expected "42".
+     > **Note**: It might not be immediately clear why the tests failed, but all of the history we've accrued in the pipeline makes it easy to identify that something from this new pull request is the cause. The next step will be to figure out why "21 + 21" produced "2121" instead of the expected "42".
 
 12.  Close the tab displaying the failed run of the job in the Azure DevOps portal.
 
@@ -217,7 +221,7 @@ In this task, you will add a build status badge to your GitHub repo.
 6.  In the list of repo files, click **README<nolink>.md** and, on the **master/calculator/README.md** page, in the upper right corner of the pane displaying the file content, click the **Edit this file** icon in the shape of a pencil. 
 7.  Add an extra line above line 6 and paste into it the content of Clipboard.
 8.  Scroll to the bottom of the page, replace the default commit message with **Add an Azure Pipelines status badge**, and click **Commit changes**. 
-
+    
     > **Note**: You now have a dynamic build status badge on your project's front page that allows everyone to know that you're effectively managing your project.
 
 ### Exercise 2: Remove the Azure DevOps billing
