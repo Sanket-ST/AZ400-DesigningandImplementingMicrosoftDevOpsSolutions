@@ -22,15 +22,15 @@ After you complete this lab, you will be able to:
    
 1. Provide the email address and click on continue.
 
- ![Github](images/mod6_22.png)
+   ![Github](images/mod6_22.png)
  
 1. Provide the password and enter the valid username and click on continue.
 
-  ![Github](images/mod6_26.png)
+   ![Github](images/mod6_26.png)
 
 1. Provide the confirmation and verify your account and click on create account. This would take 2 minutes to create.
 
- ![Github](images/mod6_25.png)
+   ![Github](images/mod6_25.png)
 
 ### Exercise 1 : Create a DevOps Starter project
 
@@ -86,7 +86,7 @@ In this task, you will create an Azure DevOps Starter project that automatically
 1.  On the **GitHub Authorization** blade, click **Authorize** again.
 1.  Back on the **az400m08l01** blade, monitor the progress of actions on the **GitHub Workflow** tile. 
 
-> **Note**: Wait for the build, deploy, and functional tests jobs of the GitHub workflow to complete. This should take about 5 minutes.
+    > **Note**: Wait for the build, deploy, and functional tests jobs of the GitHub workflow to complete. This should take about 5 minutes.
 
 #### Task 2: Review the results of creating the DevOps Starter project
 
